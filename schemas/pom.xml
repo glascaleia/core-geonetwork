@@ -49,4 +49,16 @@
   <properties>
     <rootProjectDir>../..</rootProjectDir>
   </properties>
+
+  <profiles>
+    <profile>
+      <id>schema-iso19139.rndt</id>
+      <activation>
+        <file><exists>iso19139.rndt</exists></file>
+      </activation>
+      <modules>
+        <module>iso19139.rndt</module>
+      </modules>
+    </profile>
+  </profiles>
 </project>
